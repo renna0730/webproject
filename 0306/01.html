@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>welcome html5 cs53 </h1>
+    <h1 id="dynamic-content">Welcome to HTML5 CS53</h1>
+
+    <script>
+        const messages = [
+            "Welcome to HTML5 CS53",
+            "Enjoy learning HTML5",
+            "Let's build something amazing",
+            "Keep coding and have fun!"
+        ];
+
+        const colors = [
+            "#FF5733", // Red
+            "#33FF57", // Green
+            "#3357FF", // Blue
+            "#F1C40F"  // Yellow
+        ];
+
+        let index = 0;
+
+        function showNextMessage() {
+            const contentElement = document.getElementById('dynamic-content');
+            contentElement.textContent = messages[index];
+            document.body.style.backgroundColor = colors[index];
+            index = (index + 1) % messages.length;
+        }
+
+        setInterval(showNextMessage, 3000);
+    </script>
 </body>
 </html>
