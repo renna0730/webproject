@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택가능한 입력양식</title>
+</head>
+<body>
+    <form action="../0327/01.html" method="get">
+        <table> 
+            <tr>
+                <td>
+                    <!--아이디가 username인 것을 위한 label이다-->
+                    <label for="username">성명: </label>
+
+                </td>
+                <td>
+                    <input type="text" name="usename" id="username" value="이름 입력"> 
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>성별: </td>
+                <td>
+                    <input type="radio" name="gender" id="male" value="m">
+                    <!--아이디가 male인 것을 위한 label이다-->
+                    <label for="male">남성: </label>
+                    
+
+                    <input type="radio" name="gender" id="female" value="f">
+                    <!--아이디가 female인 것을 위한 label이다-->
+                    <label for="female">여성: </label>
+
+
+                </td>
+            </tr>
+        
+            <tr align="center">
+                <td colspan="2">
+                    <button type="submit">가입</button>
+                </td>
+            </tr>
+        </table>
+
+
+
+    </form>
+</body>
+</html>
