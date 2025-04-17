@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글자 크기와 글꼴</title>
+<style>
+    .fort_big{
+        font-size: 3em;
+       
+    }
+    .fort_italic{
+        font-size: initial;
+    }
+    .fort_bold{
+        font-size: bold;
+    }
+
+    .fort_center{
+        text-align: center; /* 가운데 정렬 */
+    }
+    .fort_right{
+        text-align: right; /* 오른쪽 정렬 */
+    }
+    .button{
+        width: 150px;
+        height: 70px;
+        background-color: salmon;
+        border: 10px solid white;
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px thistle
+    }
+    .button > a {
+        display: block; /* a 태그를 블록으로 설정 */
+        line-height: 70px;
+    }
+</style>
+</head>
+<body>
+    <p class="fort_big fort_italic fort_bold fort_center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="fort_bold fort_right">2025.04.17</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    
+    <div class="button">
+        <a href="#" class="fort_bold font_itailic fort_center">CLICK!</a>
+    </div>
+</body>
+</html>
